@@ -71,6 +71,76 @@ img {
 .desktop-hotspots {
   position: absolute;
   inset: 0;
+  z-index: 2;
+}
+
+.hero-copy {
+  position: absolute;
+  left: 3.7%;
+  top: 20.3%;
+  z-index: 3;
+  width: 48%;
+  max-width: 460px;
+  color: #2f2722;
+}
+
+.hero-registry {
+  margin: 0 0 10px;
+  color: #766f6a;
+  font-size: clamp(0.62rem, 2.1vw, 1rem);
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.hero-copy h1 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.45rem, 6.3vw, 4.4rem);
+  font-weight: 400;
+  line-height: 1.04;
+}
+
+.hero-copy em {
+  color: #664631;
+  font-style: italic;
+}
+
+.hero-subtitle {
+  width: 90%;
+  margin: 14px 0 18px;
+  color: #6b625c;
+  font-size: clamp(0.58rem, 2.05vw, 1rem);
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.hero-cta {
+  display: inline-flex;
+  min-height: clamp(28px, 7vw, 52px);
+  align-items: center;
+  justify-content: center;
+  padding: 0 clamp(14px, 4vw, 28px);
+  border: 0;
+  border-radius: 999px;
+  background: var(--clay);
+  color: #fff;
+  cursor: pointer;
+  font-size: clamp(0.56rem, 2vw, 0.92rem);
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  touch-action: manipulation;
+}
+
+.hero-cta::before {
+  content: "";
+  width: 1em;
+  height: 1em;
+  margin-right: 0.55em;
+  border: 1.6px solid currentColor;
+  border-radius: 0.18em;
+  box-shadow: inset 0 0.34em 0 -0.27em currentColor;
 }
 
 .hotspot,
@@ -90,6 +160,7 @@ img {
 .art-hotspot:focus-visible,
 .primary-action:focus-visible,
 .secondary-action:focus-visible,
+.hero-cta:focus-visible,
 .menu-toggle:focus-visible,
 .close-dialog:focus-visible {
   outline: 3px solid var(--sage);
