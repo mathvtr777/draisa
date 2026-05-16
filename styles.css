@@ -97,84 +97,87 @@ img {
 }
 
 .hot-inicio {
-  left: 22.8%;
-  top: 4.7%;
-  width: 4.6%;
-  height: 3.8%;
+  left: 3.5%;
+  top: 12%;
+  width: 8.4%;
+  height: 2.4%;
 }
 
 .hot-sobre {
-  left: 28%;
-  top: 4.7%;
-  width: 6.8%;
-  height: 3.8%;
+  left: 14.5%;
+  top: 12%;
+  width: 14.6%;
+  height: 2.4%;
 }
 
 .hot-procedimentos {
-  left: 35.7%;
-  top: 4.7%;
-  width: 9.6%;
-  height: 3.8%;
+  left: 31.2%;
+  top: 12%;
+  width: 21.2%;
+  height: 2.4%;
 }
 
 .hot-resultados {
-  left: 46.4%;
-  top: 4.7%;
-  width: 8.9%;
-  height: 3.8%;
+  left: 55.6%;
+  top: 12%;
+  width: 22%;
+  height: 2.4%;
 }
 
 .hot-depoimentos {
-  left: 56.5%;
-  top: 4.7%;
-  width: 9.1%;
-  height: 3.8%;
+  left: 3.5%;
+  top: 14.7%;
+  width: 16.5%;
+  height: 2.4%;
 }
 
 .hot-contato {
-  left: 65.9%;
-  top: 4.7%;
-  width: 5.5%;
-  height: 3.8%;
+  left: 23%;
+  top: 14.7%;
+  width: 12%;
+  height: 2.4%;
 }
 
 .hot-agendar {
-  right: 2.7%;
-  top: 4.1%;
-  width: 15.2%;
-  height: 5.4%;
+  left: 74.8%;
+  top: 11.1%;
+  width: 23.2%;
+  height: 4.2%;
 }
 
 .art-conhecer {
-  left: 54.2%;
-  top: 79.2%;
-  width: 16.2%;
-  height: 7.2%;
+  left: 31.5%;
+  top: 93.5%;
+  width: 37%;
+  height: 4.3%;
 }
 
 .procedure-hotspot {
-  top: 82.4%;
-  height: 5.6%;
+  height: 3.2%;
 }
 
 .procedure-labial {
-  left: 5.4%;
-  width: 10.7%;
+  left: 8%;
+  top: 56.8%;
+  width: 20%;
 }
 
 .procedure-botox {
-  left: 29.7%;
-  width: 10.4%;
+  left: 53.2%;
+  top: 56.8%;
+  width: 20%;
 }
 
 .procedure-harmonizacao {
-  left: 52.1%;
-  width: 10.9%;
+  left: 8%;
+  top: 94.2%;
+  width: 20%;
 }
 
 .procedure-skinbooster {
-  left: 74.7%;
-  width: 10.5%;
+  left: 53.2%;
+  top: 94.2%;
+  width: 20%;
 }
 
 .results-art {
@@ -182,43 +185,17 @@ img {
 }
 
 .results-more {
-  left: 75.2%;
-  top: 24.8%;
-  width: 19%;
-  height: 5.4%;
-}
-
-.results-dot {
-  top: 81.2%;
-  width: 1.4%;
-  height: 2.9%;
-}
-
-.dot-one {
-  left: 45.6%;
-}
-
-.dot-two {
-  left: 47.4%;
-}
-
-.dot-three {
-  left: 49.2%;
-}
-
-.dot-four {
-  left: 51%;
-}
-
-.dot-five {
-  left: 52.8%;
+  left: 66.5%;
+  top: 21%;
+  width: 31.5%;
+  height: 3.2%;
 }
 
 .testimonials-schedule {
-  left: 68%;
-  top: 76.1%;
-  width: 24.8%;
-  height: 9.6%;
+  left: 11%;
+  top: 87.5%;
+  width: 78%;
+  height: 6.3%;
 }
 
 .section {
@@ -563,6 +540,129 @@ select {
     min-height: 50px;
     padding-inline: 18px;
     text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .mobile-topbar {
+    display: none;
+  }
+
+  .desktop-hotspots {
+    display: block;
+  }
+
+  .hero,
+  .about-art,
+  .procedure-art,
+  .results-art,
+  .testimonials-art {
+    overflow: hidden;
+  }
+
+  .hero img,
+  .about-art img,
+  .procedure-art img,
+  .results-art img,
+  .testimonials-art img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    transform: none;
+  }
+
+  .hot-inicio {
+    left: 3.5%;
+    top: 12%;
+    width: 8.4%;
+    height: 2.4%;
+  }
+
+  .hot-sobre {
+    left: 14.5%;
+    top: 12%;
+    width: 14.6%;
+    height: 2.4%;
+  }
+
+  .hot-procedimentos {
+    left: 31.2%;
+    top: 12%;
+    width: 21.2%;
+    height: 2.4%;
+  }
+
+  .hot-resultados {
+    left: 55.6%;
+    top: 12%;
+    width: 22%;
+    height: 2.4%;
+  }
+
+  .hot-depoimentos {
+    left: 3.5%;
+    top: 14.7%;
+    width: 16.5%;
+    height: 2.4%;
+  }
+
+  .hot-contato {
+    left: 23%;
+    top: 14.7%;
+    width: 12%;
+    height: 2.4%;
+  }
+
+  .hot-agendar {
+    left: 74.8%;
+    top: 11.1%;
+    width: 23.2%;
+    height: 4.2%;
+  }
+
+  .art-conhecer {
+    left: 31.5%;
+    top: 93.5%;
+    width: 37%;
+    height: 4.3%;
+  }
+
+  .procedure-labial {
+    left: 8%;
+    top: 56.8%;
+    width: 20%;
+  }
+
+  .procedure-botox {
+    left: 53.2%;
+    top: 56.8%;
+    width: 20%;
+  }
+
+  .procedure-harmonizacao {
+    left: 8%;
+    top: 94.2%;
+    width: 20%;
+  }
+
+  .procedure-skinbooster {
+    left: 53.2%;
+    top: 94.2%;
+    width: 20%;
+  }
+
+  .results-more {
+    left: 66.5%;
+    top: 21%;
+    width: 31.5%;
+    height: 3.2%;
+  }
+
+  .testimonials-schedule {
+    left: 11%;
+    top: 87.5%;
+    width: 78%;
+    height: 6.3%;
   }
 }
 
