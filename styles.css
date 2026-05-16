@@ -1,0 +1,573 @@
+:root {
+  --paper: #fffaf5;
+  --ivory: #f7f2ec;
+  --ink: #272321;
+  --muted: #6f6660;
+  --clay: #784f35;
+  --sage: #687566;
+  --line: #ded3c7;
+  --shadow: 0 24px 70px rgba(49, 35, 25, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+section[id] {
+  scroll-margin-top: 8px;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.mobile-topbar {
+  display: none;
+}
+
+.hero,
+.about-art,
+.procedure-art,
+.results-art,
+.testimonials-art {
+  position: relative;
+  background: var(--paper);
+}
+
+.hero img,
+.about-art img,
+.procedure-art img,
+.results-art img,
+.testimonials-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.desktop-hotspots {
+  position: absolute;
+  inset: 0;
+}
+
+.hotspot,
+.art-hotspot {
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: transparent;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.hotspot:focus-visible,
+.art-hotspot:focus-visible,
+.primary-action:focus-visible,
+.secondary-action:focus-visible,
+.menu-toggle:focus-visible,
+.close-dialog:focus-visible {
+  outline: 3px solid var(--sage);
+  outline-offset: 3px;
+}
+
+.hot-inicio {
+  left: 22.8%;
+  top: 4.7%;
+  width: 4.6%;
+  height: 3.8%;
+}
+
+.hot-sobre {
+  left: 28%;
+  top: 4.7%;
+  width: 6.8%;
+  height: 3.8%;
+}
+
+.hot-procedimentos {
+  left: 35.7%;
+  top: 4.7%;
+  width: 9.6%;
+  height: 3.8%;
+}
+
+.hot-resultados {
+  left: 46.4%;
+  top: 4.7%;
+  width: 8.9%;
+  height: 3.8%;
+}
+
+.hot-depoimentos {
+  left: 56.5%;
+  top: 4.7%;
+  width: 9.1%;
+  height: 3.8%;
+}
+
+.hot-contato {
+  left: 65.9%;
+  top: 4.7%;
+  width: 5.5%;
+  height: 3.8%;
+}
+
+.hot-agendar {
+  right: 2.7%;
+  top: 4.1%;
+  width: 15.2%;
+  height: 5.4%;
+}
+
+.art-conhecer {
+  left: 54.2%;
+  top: 79.2%;
+  width: 16.2%;
+  height: 7.2%;
+}
+
+.procedure-hotspot {
+  top: 82.4%;
+  height: 5.6%;
+}
+
+.procedure-labial {
+  left: 5.4%;
+  width: 10.7%;
+}
+
+.procedure-botox {
+  left: 29.7%;
+  width: 10.4%;
+}
+
+.procedure-harmonizacao {
+  left: 52.1%;
+  width: 10.9%;
+}
+
+.procedure-skinbooster {
+  left: 74.7%;
+  width: 10.5%;
+}
+
+.results-art {
+  background: #2f1f16;
+}
+
+.results-more {
+  left: 75.2%;
+  top: 24.8%;
+  width: 19%;
+  height: 5.4%;
+}
+
+.results-dot {
+  top: 81.2%;
+  width: 1.4%;
+  height: 2.9%;
+}
+
+.dot-one {
+  left: 45.6%;
+}
+
+.dot-two {
+  left: 47.4%;
+}
+
+.dot-three {
+  left: 49.2%;
+}
+
+.dot-four {
+  left: 51%;
+}
+
+.dot-five {
+  left: 52.8%;
+}
+
+.testimonials-schedule {
+  left: 68%;
+  top: 76.1%;
+  width: 24.8%;
+  height: 9.6%;
+}
+
+.section {
+  padding: 88px clamp(22px, 6vw, 96px);
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: var(--sage);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h2,
+p {
+  margin-top: 0;
+}
+
+h2 {
+  margin-bottom: 18px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 3vw, 3.6rem);
+  font-weight: 400;
+  line-height: 1.08;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(320px, 520px);
+  gap: 58px;
+  background: var(--ivory);
+}
+
+.contact p:not(.eyebrow) {
+  color: var(--muted);
+  font-size: 1.06rem;
+}
+
+.contact-actions,
+.dialog-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.contact-form {
+  display: grid;
+  gap: 16px;
+  padding: 30px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+label {
+  display: grid;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+input,
+select {
+  width: 100%;
+  min-height: 48px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.primary-action,
+.secondary-action {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.primary-action {
+  border: 1px solid var(--clay);
+  background: var(--clay);
+  color: #fff;
+}
+
+.secondary-action {
+  border: 1px solid var(--clay);
+  background: transparent;
+  color: var(--clay);
+}
+
+.primary-action:hover,
+.secondary-action:hover {
+  filter: brightness(0.94);
+}
+
+.form-status {
+  min-height: 24px;
+  margin: 0;
+  color: var(--sage);
+  font-weight: 700;
+}
+
+.scheduler {
+  width: min(92vw, 520px);
+  padding: 34px;
+  border: 0;
+  border-radius: 8px;
+  background: var(--paper);
+  box-shadow: var(--shadow);
+}
+
+.scheduler::backdrop {
+  background: rgba(29, 25, 22, 0.42);
+}
+
+.close-dialog {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .mobile-topbar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    min-height: 68px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 18px;
+    border-bottom: 1px solid var(--line);
+    background: rgba(255, 250, 245, 0.96);
+    backdrop-filter: blur(12px);
+  }
+
+  .brand {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.28rem;
+    line-height: 0.98;
+    text-transform: uppercase;
+  }
+
+  .brand span {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.66rem;
+  }
+
+  .menu-toggle {
+    display: grid;
+    width: 44px;
+    height: 44px;
+    place-content: center;
+    gap: 5px;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+  }
+
+  .menu-toggle span {
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: var(--ink);
+  }
+
+  .mobile-menu {
+    position: absolute;
+    top: 68px;
+    left: 0;
+    right: 0;
+    display: none;
+    padding: 18px;
+    border-bottom: 1px solid var(--line);
+    background: var(--paper);
+    box-shadow: 0 18px 42px rgba(49, 35, 25, 0.12);
+  }
+
+  .mobile-menu.is-open {
+    display: grid;
+    gap: 14px;
+  }
+
+  .desktop-hotspots {
+    display: none;
+  }
+
+  section[id] {
+    scroll-margin-top: 68px;
+  }
+
+  .hero {
+    overflow: hidden;
+  }
+
+  .hero img {
+    width: 100%;
+    max-width: 100%;
+    transform: none;
+  }
+
+  .contact {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .section {
+    padding: 64px 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-art,
+  .procedure-art,
+  .results-art,
+  .testimonials-art {
+    overflow: hidden;
+  }
+
+  .about-art img,
+  .procedure-art img,
+  .results-art img,
+  .testimonials-art img {
+    width: 100%;
+    max-width: 100%;
+    transform: none;
+  }
+
+  .hero img {
+    width: 100%;
+    transform: none;
+  }
+
+  .art-conhecer {
+    left: 54.2%;
+    top: 79.2%;
+    width: 16.2%;
+    height: 7.2%;
+  }
+
+  .procedure-hotspot {
+    top: 82.4%;
+    height: 5.6%;
+  }
+
+  .procedure-labial {
+    left: 5.4%;
+    width: 10.7%;
+  }
+
+  .procedure-botox {
+    left: 29.7%;
+    width: 10.4%;
+  }
+
+  .procedure-harmonizacao {
+    left: 52.1%;
+    width: 10.9%;
+  }
+
+  .procedure-skinbooster {
+    left: 74.7%;
+    width: 10.5%;
+  }
+
+  .results-more {
+    left: 75.2%;
+    top: 24.8%;
+    width: 19%;
+    height: 5.4%;
+  }
+
+  .results-dot {
+    top: 81.2%;
+    width: 1.4%;
+    height: 2.9%;
+  }
+
+  .dot-one {
+    left: 45.6%;
+  }
+
+  .dot-two {
+    left: 47.4%;
+  }
+
+  .dot-three {
+    left: 49.2%;
+  }
+
+  .dot-four {
+    left: 51%;
+  }
+
+  .dot-five {
+    left: 52.8%;
+  }
+
+  .testimonials-schedule {
+    left: 68%;
+    top: 76.1%;
+    width: 24.8%;
+    height: 9.6%;
+  }
+
+  h2 {
+    font-size: 1.95rem;
+  }
+
+  .contact-form,
+  .scheduler {
+    padding: 22px;
+  }
+
+  .contact-actions,
+  .dialog-actions {
+    display: grid;
+  }
+
+  .primary-action,
+  .secondary-action {
+    width: 100%;
+    min-height: 50px;
+    padding-inline: 18px;
+    text-align: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

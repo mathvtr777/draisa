@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dra. Isauria D'Avila | Harmonização Facial</title>
+    <meta
+      name="description"
+      content="Landing page da Dra. Isauria D'Avila com procedimentos, resultados, depoimentos e agendamento de consulta."
+    />
+    <link rel="preload" as="image" href="hero-dra-isauria.jpg" fetchpriority="high" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="mobile-topbar" aria-label="Navegação principal mobile">
+      <a class="brand" href="#inicio" aria-label="Ir para o início">
+        <span>Dra.</span>
+        Isauria D'Avila
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="mobile-menu" class="mobile-menu" aria-label="Menu mobile">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre mim</a>
+        <a href="#procedimentos">Procedimentos</a>
+        <a href="#resultados">Antes e depois</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato">Contato</a>
+        <button class="primary-action open-scheduler" type="button">Agendar consulta</button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero" aria-label="Dra. Isauria D'Avila">
+        <img src="hero-dra-isauria.jpg" alt="Dra. Isauria D'Avila em retrato profissional" fetchpriority="high" decoding="async" />
+        <div class="desktop-hotspots" aria-label="Botões do hero">
+          <a class="hotspot hot-inicio" href="#inicio">Início</a>
+          <a class="hotspot hot-sobre" href="#sobre">Sobre mim</a>
+          <a class="hotspot hot-procedimentos" href="#procedimentos">Procedimentos</a>
+          <a class="hotspot hot-resultados" href="#resultados">Antes e depois</a>
+          <a class="hotspot hot-depoimentos" href="#depoimentos">Depoimentos</a>
+          <a class="hotspot hot-contato" href="#contato">Contato</a>
+          <button class="hotspot hot-agendar open-scheduler" type="button">Agendar consulta</button>
+        </div>
+      </section>
+
+      <section id="sobre" class="about-art" aria-label="Sobre mim">
+        <img src="sobre-dra-isauria.jpg" alt="Dra. Isauria D'Avila e texto de apresentação profissional" loading="lazy" decoding="async" />
+        <a class="art-hotspot art-conhecer" href="#sobre">Conhecer mais</a>
+      </section>
+
+      <section id="procedimentos" class="procedure-art" aria-label="Procedimentos em destaque">
+        <img src="procedimentos-dra-isauria.jpg" alt="Procedimentos: preenchimento labial, botox, harmonização facial e skinbooster" loading="lazy" decoding="async" />
+        <button class="art-hotspot procedure-hotspot procedure-labial open-scheduler" type="button">Saiba mais sobre preenchimento labial</button>
+        <button class="art-hotspot procedure-hotspot procedure-botox open-scheduler" type="button">Saiba mais sobre botox</button>
+        <button class="art-hotspot procedure-hotspot procedure-harmonizacao open-scheduler" type="button">Saiba mais sobre harmonização facial</button>
+        <button class="art-hotspot procedure-hotspot procedure-skinbooster open-scheduler" type="button">Saiba mais sobre skinbooster</button>
+      </section>
+
+      <section id="resultados" class="results-art" aria-label="Antes e depois">
+        <img src="resultados-dra-isauria.jpg" alt="Antes e depois com resultados de procedimentos faciais" loading="lazy" decoding="async" />
+        <a class="art-hotspot results-more" href="#contato">Ver mais resultados</a>
+        <button class="art-hotspot results-dot dot-one is-active" type="button" data-results-dot="1">Resultado 1</button>
+        <button class="art-hotspot results-dot dot-two" type="button" data-results-dot="2">Resultado 2</button>
+        <button class="art-hotspot results-dot dot-three" type="button" data-results-dot="3">Resultado 3</button>
+        <button class="art-hotspot results-dot dot-four" type="button" data-results-dot="4">Resultado 4</button>
+        <button class="art-hotspot results-dot dot-five" type="button" data-results-dot="5">Resultado 5</button>
+      </section>
+
+      <section id="depoimentos" class="testimonials-art" aria-label="Depoimentos e agendamento">
+        <img src="depoimentos-dra-isauria.jpg" alt="Depoimentos de pacientes e chamada para agendar consulta" loading="lazy" decoding="async" />
+        <button class="art-hotspot testimonials-schedule open-scheduler" type="button">Agendar agora</button>
+      </section>
+
+      <section id="contato" class="section contact">
+        <div>
+          <p class="eyebrow">Contato</p>
+          <h2>Agende uma avaliação</h2>
+          <p>
+            Envie seus dados e escolha o melhor canal. A equipe retorna para confirmar
+            disponibilidade e orientar os próximos passos.
+          </p>
+          <div class="contact-actions">
+            <a class="secondary-action" href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noreferrer">WhatsApp</a>
+            <a class="secondary-action" href="mailto:contato@draisauria.com.br?subject=Agendamento%20de%20consulta">E-mail</a>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <label>
+            Nome
+            <input name="nome" type="text" autocomplete="name" required />
+          </label>
+          <label>
+            Telefone
+            <input name="telefone" type="tel" autocomplete="tel" required />
+          </label>
+          <label>
+            Procedimento de interesse
+            <select name="procedimento" required>
+              <option value="">Selecione</option>
+              <option>Harmonização facial</option>
+              <option>Preenchimento labial</option>
+              <option>Bioestimuladores</option>
+              <option>Preenchimento</option>
+              <option>Botox</option>
+              <option>Skinbooster</option>
+              <option>Toxina botulínica</option>
+            </select>
+          </label>
+          <button class="primary-action" type="submit">Enviar solicitação</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <dialog class="scheduler" id="scheduler">
+      <form method="dialog">
+        <button class="close-dialog" type="submit" aria-label="Fechar">x</button>
+      </form>
+      <p class="eyebrow">Agendar consulta</p>
+      <h2>Como você prefere continuar?</h2>
+      <p>Escolha um canal para iniciar o agendamento. Os links já levam a mensagem pronta.</p>
+      <div class="dialog-actions">
+        <a class="primary-action" href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Isauria." target="_blank" rel="noreferrer">Chamar no WhatsApp</a>
+        <a class="secondary-action" href="#contato">Preencher formulário</a>
+      </div>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
